@@ -1,0 +1,86 @@
+#footer {
+    background-color: #ecdec3;
+    height: 415px;
+
+    .footer_inner {
+        font-family: $eng_font;
+        position: relative;
+        width: 1200px;
+        margin: 0 auto;
+
+        .footer_info {
+            position: absolute;
+            padding: 0 90px;
+            box-sizing: border-box;
+            text-align: left;
+            padding-top: 60px;
+            box-sizing: border-box;
+            color: $theme_color;
+            font-size: 20px;
+            font-weight: 200;
+
+            .my_info {
+                .footer_name {
+                    font-size: 24px;
+                    font-weight: 300;
+                    position: relative;
+                   line-height: 90px;
+
+                   &::after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 46px;
+                    height: 3px;
+                    top: 35px;
+                    background-color: $theme_color;
+                    }
+                }
+            }
+
+            .copy_right {
+                line-height: 100px;
+             }
+
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 1px;
+                height: 350px;
+                top: 50%;
+                left: 600px;
+                margin-top: -150px;
+                background-color: $theme_color;
+            }
+        }
+        .sns {
+            position: absolute;
+            width: 400px;
+            height: 200px;
+            right: 0;
+            top: 160px;
+
+            li {
+                display: inline-block;
+                margin: 0 5px;
+
+                a {
+                    display: block;
+                    width: 75px;
+                    height: 75px;
+                    text-align: center;
+                    border: 1px solid  $theme_color;
+                    border-radius: 100%;
+                    color: $theme_color;
+
+                    i {
+                        display: inline-block;
+                        line-height: 75px;
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
