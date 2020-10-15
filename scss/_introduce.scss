@@ -481,7 +481,7 @@
                 height: 25px;
                 text-indent: -9999px;
                 overflow: hidden;
-                @include bgImage('/images/under_btn.png', no-repeat, (center, center), auto);
+                @include bgImage('/portfolio/images/under_btn.png', no-repeat, (center, center), auto);
             }
         }   
     }
