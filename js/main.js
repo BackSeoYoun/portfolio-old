@@ -226,6 +226,20 @@ window.addEventListener("load", function(){
        });
    });
    
+// 링크
+    var agent=navigator.userAgent.toLowerCase();
+    var path1="";
 
+    if(agent.indexOf("android") != -1 || agent.indexOf("iphone") != -1 || agent.indexOf("ipad") != -1){
+        // Mobile URL입니다.
+        path1="/portfolio/project1/mobile/index.html";
+    }
+    else{
+        // PC URL입니다.
+        path1="/portfolio/project1/pc/index.html";
+    }
+
+    var project1Btn=document.getElementById("project1");
+    project1Btn.setAttribute("href", path1);
  
 });

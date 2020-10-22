@@ -422,7 +422,6 @@ dl, dt, dd {
         #sec3 .sec3_inner #sec3_list .desc_list li {
           position: relative;
           display: none;
-          margin-top: 200px;
           opacity: 0;
           -webkit-transition: opacity 0.3s;
           transition: opacity 0.3s;
@@ -453,6 +452,12 @@ dl, dt, dd {
             font-size: 20px;
             font-weight: 300;
             color: #59432b; }
+          #sec3 .sec3_inner #sec3_list .desc_list li a {
+            font-family: "Roboto", sans-serif;
+            font-size: 22px;
+            color: #6ba6b4;
+            font-weight: 700;
+            line-height: 40px; }
     #sec3 .sec3_inner .under_btn {
       width: 48px;
       height: 25px;
@@ -654,11 +659,11 @@ dl, dt, dd {
             background-color: #6ba6b4; }
       #sec4 .sec4_container li #preview .img_preview {
         text-align: right; }
-    #sec4 .sec4_container li #sec4 .more_btn {
+    #sec4 .sec4_container li .more_btn {
       font-family: "Roboto", sans-serif;
       text-align: right;
       margin-top: 45px; }
-      #sec4 .sec4_container li #sec4 .more_btn a {
+      #sec4 .sec4_container li .more_btn a {
         font-size: 35px;
         font-weight: 900;
         font-style: italic;
