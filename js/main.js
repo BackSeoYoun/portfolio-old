@@ -240,6 +240,10 @@ window.addEventListener("load", function(){
     }
 
     var project1Btn=document.getElementsByClassName("project1");
+
+    for(var i=0; project1Btn.length; i++){
+        project1Btn[i].setAttribute("href", path1);
+    }
     project1Btn.setAttribute("href", path1);
  
 });
