@@ -239,7 +239,7 @@ window.addEventListener("load", function(){
         path1="/portfolio/project1/pc/index.html";
     }
 
-    var project1Btn=document.getElementsByClassName("project1");
+    var project1Btn=document.getElementsByClassName("project1")[0];
 
     for(var i=0; project1Btn.length; i++){
         project1Btn[i].setAttribute("href", path1);
