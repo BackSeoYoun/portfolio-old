@@ -244,6 +244,4 @@ window.addEventListener("load", function(){
     for(var i=0; project1Btn.length; i++){
         project1Btn[i].setAttribute("href", path1);
     }
-    project1Btn.setAttribute("href", path1);
- 
 });
