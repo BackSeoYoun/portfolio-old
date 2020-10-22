@@ -239,7 +239,7 @@ window.addEventListener("load", function(){
         path1="/portfolio/project1/pc/index.html";
     }
 
-    var project1Btn=document.getElementById("project1");
+    var project1Btn=document.getElementsByClass("project1")[0];
     project1Btn.setAttribute("href", path1);
  
 });
