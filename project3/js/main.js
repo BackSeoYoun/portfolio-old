@@ -4,7 +4,7 @@ $(function(){
 	var n=0;
 	var topPos=0;
 	var categoryFlag=false;
-	var categoryList=["#header", ".sec1", ".sec2", ".sec3", ".sec4", ".contact"];
+	var categoryList=["#header", "#business", "#portfolio", "#culture", "#awards", "#contact"];
 
 	$(window).scroll(function(){
 		t=$(window).scrollTop();
@@ -74,8 +74,8 @@ $(function(){
 	$("#gnb li").click(function(e){
 		e.preventDefault();
 		$(".dim").trigger("click");
-		topPos=$(this).find("a").attr("href");
-		topPos=$(topPos).offset().top;
+		topPos=$(this).find("a").attr("href"); // #contact // var categoryList=["#header", ".sec1", ".sec2", ".sec3", ".sec4", ".contact"];
+		topPos=$(topPos).offset().top; // $(#contact).offset.top
 		$("html").animate({scrollTop:topPos}, 400);
 	});
 	$("#m_gnb li").click(function(e){
