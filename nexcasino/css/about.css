@@ -1,0 +1,235 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'cooper-bold';
+    src: url(../font/CooperHewitt-Bold.woff);
+}
+@font-face {
+    font-family: 'cooper-book';
+    src: url(../font/CooperHewitt-Book.woff);
+}
+section {
+    text-align: center;
+}
+.about_title {
+    margin-top: 20px;
+}
+.title_desc {
+    font-family: 'cooper-book';
+    font-size: 42px;
+}
+.slogan {
+    margin-top: 10px;
+    font-family: 'cooper-bold';
+    font-size: 48px;
+    line-height: 58px;
+    color: #16ffec;
+}
+.about_desc {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0 45px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 38.4px;
+    box-sizing: border-box;
+    color: #e0e0e0;
+}
+.about_desc.bottom {
+    margin-top: 50px;
+}
+.contour {
+    margin: 0 auto;
+    margin-top: 67px;
+    margin-bottom: 82px;
+    width: 96px;
+    height: 4px;
+    background-color: #fff;
+}
+.partner_section {
+    text-align: center;
+}
+.partner_title {
+    font-family: 'cooper-book';
+    font-size: 48px;
+}
+.about_desc.partner {
+    margin-top: 30px;
+}
+.partner_list {
+    margin: 0 auto;
+    width: 1000px;
+    margin-top: 70px;
+}
+.partner_list li {
+    display: inline-block;
+    margin: 0 35px;
+    margin-bottom: 55px;
+}
+.partner_list li img {
+    width: 100%;
+}
+footer {
+    margin-top: 50px;
+}
+@media only screen and (max-width: 1920px) {
+    .partner_list {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1520px) {
+    .title_desc {
+        font-size: 36px;
+    }
+    .slogan {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .about_desc {
+        font-size: 18px;
+        line-height: 28.4px;
+    }
+    .contour {        
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .partner_title {
+        font-size: 36px;
+    }
+    .about_desc.partner br {
+        display:  none;
+    }
+    .partner_list li {
+        width: 200px;
+        margin: 0 25px;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .title_desc {
+        font-size: 30px;
+    }
+    .slogan {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .about_desc {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .about_desc.top {
+        margin-top: 20px;
+    }
+    .about_desc.bottom {
+        margin-top: 20px;
+    }
+    .contour {        
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .partner_title {
+        font-size: 32px;
+    }
+    .about_desc.partner {
+        margin-top: 20px;
+    }
+    .about_desc.partner br {       
+        display:  none;
+    }
+    .partner_list li {
+        width: calc((100% - 240px)/2);
+        margin: 0 25px;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 1060px) {
+    .partner_list li {
+        width: 40%;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .title_desc {
+        font-size: 28px;
+    }
+    .slogan {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .about_desc {
+        padding: 0 10px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .about_desc.top {
+        margin-top: 20px;
+    }
+    .about_desc.bottom {
+        margin-top: 20px;
+    }
+    .contour {        
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .partner_title {
+        font-size: 28px;
+    }
+    .about_desc.partner {
+        margin-top: 20px;
+    }
+    .about_desc.partner br {       
+        display:  block;
+    }
+    .partner_list {
+        width: 70%;
+    }
+    .partner_list li {
+        width: calc((100% - 110px)/2);
+        margin: 0 25px;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width:750px) {
+    .partner_list li {
+        width: 70%;
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .title_desc {
+        font-size: 24px;
+    }
+    .slogan {
+        font-size: 21px;
+        line-height: 30px;
+    }
+    .slogan br {
+        display: none;
+    }
+    .about_desc {
+        padding: 0 10px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .about_desc.top {
+        margin-top: 20px;
+    }
+    .about_desc.bottom {
+        margin-top: 20px;
+    }
+    .contour {        
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+    .partner_title {
+        font-size: 24px;
+    }
+    .about_desc.partner {
+        margin-top: 20px;
+    }
+    .about_desc.partner br {       
+        display:  block;
+    }
+    .partner_list {
+        width: 70%;
+    }
+}

@@ -1,0 +1,23 @@
+$(function(){
+    $(".main-menu-plus").mouseenter(function(){
+        $(this).addClass("active");
+    });
+    $(".main-menu-plus").mouseleave(function(){
+        $(this).removeClass("active");
+    });
+    $("#sub01").click(function(){
+        $("#sub-container-01").slideToggle(500);
+    });
+    $("#sub02").click(function(){
+        $("#sub-container-02").slideToggle(500);
+    });
+    $("#sub03").click(function(){
+        $("#sub-container-03").slideToggle(500);
+    });
+    $("#sub04").click(function(){
+        $("#sub-container-04").slideToggle(500);
+    });
+    $("#sub05").click(function(){
+        $("#sub-container-05").slideToggle(500);
+    });
+});

@@ -1,0 +1,359 @@
+<head>
+	<link rel="stylesheet" href="css/reset.css">
+</head>
+<style>
+	.charge_wrap {
+		background-color: #fff;
+	}
+	.cash_wrapper {
+		width: 720px;
+		height: 541px;
+		background-color: #fff;
+		display: flex;		
+	}
+	.cash_left {
+		padding: 40px 22px;		
+		width: 260px;
+		height: 541px;
+		background-color:#ef7c1b;	
+		box-sizing: border-box;	
+	}
+	.cash_title {
+		display: flex;
+		align-items: center;
+		font-size: 36px;
+		color: #fff;
+	}
+	.cash_title img {
+		margin-right: 3px;
+	}
+	.cash_result {
+		margin-top: 240px;
+	}
+	.cash_result p {
+		color: #fff;
+	}
+	.paytext {
+		width: 82px;
+		font-size: 18px;
+		line-height: 32px;
+		border-bottom: 3px solid #fff;
+	}
+	.paymoney {
+		font-size: 40px;
+		font-weight: 700;
+		border-bottom: 1px solid #F7BE8D;
+		padding-bottom: 3px;
+	}
+    .paymoney_amount {
+        font-size: 40px;
+        font-weight: 700;
+    }
+	.paymoney_count {
+		font-size: 20px;
+		font-weight: 400;
+	}
+	.detail_pay {
+		display: flex;
+		margin-top: 17px;
+	}
+	.detail_pay p {
+		font-size: 15px;
+		color: #FDE9D8;
+	}
+	.cash_right {
+		padding: 40px 45px;		
+		width: 460px;
+		box-sizing: border-box;
+	}
+	.charge_money p {
+	border-left: 5px solid #ef7c1b;
+	padding-left: 6px;
+    font-size: 20px; 
+	line-height: 24px;
+    color: #777;
+	}
+	.charge_money ul {
+		margin-top: 17px;
+		width: 363px;
+		height: 91px;
+		border: 1px solid #CBCBCB;
+	}
+	.charge_money li {
+		float:left;
+		width: 90px;
+		height: 45px;
+		border-left: 1px solid #CBCBCB;
+		border-bottom: 1px solid #CBCBCB;
+	}
+	.charge_money li:nth-child(4n+1) {
+		border-left: none;
+	}
+	.charge_money li a {
+		display: block;
+		width: 90px;
+		height: 45px;
+		font-family: 'Montserrat',Sans-serif;
+		font-size: 14px;
+		/* font-weight: 500; */
+		text-align: center;
+		line-height: 45px;
+	}
+	.charge_money li a.selected {
+		position: relative;
+		background-color: #ef7c1b;
+		border: 1px solid #EF4E1B;
+		color: #fff;
+		font-weight: bold;
+		margin-top: -1px;
+		margin-left: -1px;
+		z-index:3;
+	}
+	.cash_use {
+		margin-top: 35px;
+	}
+	.cash_use p {
+	border-left: 5px solid #ef7c1b;
+	padding-left: 6px;
+    font-size: 20px; 
+	line-height: 24px;
+    color: #777;
+	}
+	.cash_use ul {
+		margin-top: 17px;
+		width: 363px;
+		height: 91px;
+		border: 1px solid #CBCBCB;
+	}
+	.cash_use li {
+		float:left;
+		width: 120px;
+		height: 45px;
+		border-left: 1px solid #CBCBCB;
+		border-bottom: 1px solid #CBCBCB;
+	}
+	.cash_use li:nth-child(3n+1) {
+		border-left: none;
+	}
+	.cash_use li a {
+		display: block;
+		width: 120px;
+		height: 45px;
+		font-family: 'Montserrat',Sans-serif;
+		font-size: 14px;
+		/* font-weight: 500; */
+		text-align: center;
+		line-height: 45px;
+	}
+	.cash_use li a.selected {
+		position: relative;
+		background-color: #ef7c1b;
+		border: 1px solid #ef4e1b;
+		color: #fff;
+		font-weight: bold;
+		margin-top: -1px;
+		margin-left: -1px;
+		z-index:10;
+	}
+	input[type=checkbox] { 
+		margin:-4px 3px 0 0px; 
+		vertical-align:middle; 
+	}
+	.check_box {
+		margin-top: 42px;
+		font-size: 13px;
+		color: #9C9C9C;
+		vertical-align:middle;
+	}
+	.btn_area {
+		margin: 0 auto;
+		width: 320px;
+		margin-top: 25px;
+		display:flex;
+		justify-content : space-around;
+	}
+	.btn_area a {
+		width: 132px;
+		height: 52px;
+		border-radius: 12px;
+		font-size: 16px;
+		color: #fff;
+		text-align: center;
+		line-height: 52px;
+	}
+	.charge_cancle {
+		background-color: #B8B8B8;
+	}
+	.charge_excute {
+        width: 132px;
+        height: 52px;
+        border-radius: 12px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        line-height: 52px;
+		background-color: #EF7C1B;
+	}
+</style>
+<div class="charge_wrap">
+	<div class="cash_wrapper">
+		<div class="cash_left">
+			<div class="cash_title">
+				<img src="/images/charge_star.png" alt="별"> 캐쉬 충전</div>
+			<div class="cash_result">
+				<p class="paytext">결제 금액</p>
+                <p class="paymoney"><span class="paymoney_amount">10,000</span><span class="paymoney_count">원</span></p>
+				<div class="detail_pay">
+					<p class="detail_tite">세부 충전 내역 : </p>
+                    <p class="detail_money"> <span class="detail_amount">10,000</span><span class="detail_count">캐쉬</span></p>
+				</div>
+			</div>
+		</div>
+        <form method="post" onSubmit="return checkChargeForm(this);" action="">
+            <input type="hidden" name="myCharge" value="<?=$my_charge_month_remaining;?>" />
+            <input type="hidden" name="itemCode" value="C0004" />
+            <input type="hidden" name="price" value="10000" />
+            <input type="hidden" name="type" value="teledit" />
+		    <div class="cash_right">
+			<div class="charge_money">
+				<p>충전 금액</p>			
+				<ul>
+					<li><a href="javascript:void(0);" data-pay_money="1,000" data-item_code="C0001">1,000</a></li>
+					<li><a href="javascript:void(0);" data-pay_money="3,000" data-item_code="C0002">3,000</a></li>
+					<li><a href="javascript:void(0);" data-pay_money="5,000" data-item_code="C0003">5,000</a></li>
+					<li><a href="javascript:void(0);" data-pay_money="10,000" data-item_code="C0004">10,000</a></li>
+					<li><a href="javascript:void(0);" data-pay_money="20,000" data-item_code="C0005">20,000</a></li>
+					<li><a href="javascript:void(0);" data-pay_money="30,000" data-item_code="C0006">30,000</a></li>
+					<li><a href="javascript:void(0);" data-pay_money="50,000" data-item_code="C0007">50,000</a></li>
+					<li><a href="javascript:void(0);" data-pay_money="100,000" data-item_code="C0008">100,000</a></li>
+				</ul>
+			</div>			
+			<div class="cash_use">
+				<p>충전 수단</p>
+				<ul>
+					<li><a href="#" data-bill_type="teledit">휴대폰</a></li>
+					<li><a href="#" data-bill_type="credit">신용카드</a></li>
+					<li><a href="#" data-bill_type="bank">계좌이체</a></li>
+					<li><a href="#" data-bill_type="culture">문화상품권</a></li>
+					<li><a href="#" data-bill_type="book">도서상품권</a></li>
+					<li><a href="#" data-bill_type="happymoney">해피머니상품권</a></li>
+				</ul>
+			</div>
+			<div class="check_box">
+				<label><input type="checkbox" name="agree" value="Y" />위 상품의 구매조건을 확인했고, 결제 진행에 동의합니다.</label>
+			</div>
+			<div class="btn_area">
+				<a href="javascript:window.close()" class="charge_cancle">취소</a>
+                <input type="submit" class="charge_excute" value="충전하기">
+			</div>
+		</div>
+        </form>
+    </div>
+</div>
+<script>
+	$(document).ready(function(){
+		$(".charge_money li:nth-child(4) a").addClass("selected");
+		$(".charge_money li a").click(function(){
+			$(".charge_money li a").removeClass("selected");
+			$(this).addClass("selected");
+
+            let payMoney = $(this).data('pay_money');
+            let itemCode = $(this).data('item_code');
+
+			$('.paymoney_amount').text(payMoney);
+            $('.detail_amount').text(payMoney);
+
+            // input data
+            $("input[name='itemCode']").val(itemCode);
+            $("input[name='price']").val(removeComma(payMoney));
+		});
+		$(".cash_use li:first-child a").addClass("selected");
+		$(".cash_use li a").click(function(){
+			$(".cash_use li a").removeClass("selected");
+			$(this).addClass("selected");
+
+            let billType = $(this).data('bill_type');
+
+            $("input[name='type']").val(billType);
+		});
+
+		// default select
+
+	});
+
+	function removeComma( numstr )
+    {
+        return numstr.toString().replace(/,/g, '');
+    }
+
+
+    function checkChargeForm(form) {
+        var type = $("input[name='type']").val().trim();
+        var price = $("input[name='price']").val().trim() * 1;
+        var myCharge = $("input[name='myCharge']").val().trim() * 1;
+
+        if (type == 'teledit' && price > $('#telChargeLimit').val()) {
+            alert('휴대전화 결제한도는 <?=number_format($tel_charge_limit)?>원 입니다.');
+            return false;
+        }
+        if(myCharge < price) {
+            alert('월 결제 한도를 초과하는 금액입니다.\n남은 한도를 확인해 주세요.');
+            return false;
+        }
+        if($("input[name='itemCode']").val().trim() == "") {
+            alert('최소 충전 금액은 1,000원 이상부터 가능합니다.');
+            return false;
+        }
+        if(price == "" || (price * 1) < 1000 ) {
+            alert('최소 충전 금액은 1,000원 이상부터 가능합니다.');
+            return false;
+        }
+        if($("input[name='type']").val().trim() == "") {
+            alert('충전수단을 선택해 주세요.');
+            return false;
+        }
+        if($("input[name='agree']:checked").length == 0) {
+            alert('결제 진행에 동의하셔야 결제가 진행됩니다.');
+            return false;
+        }
+
+        if(type == "credit") {
+            // alert('준비 중입니다.');
+            // return false;
+            form.action = "/Cash/chargeReady";
+        }
+        else if(type == "teledit") {
+            // alert('준비 중입니다.');
+            // return false;
+            form.action = "/Cash/chargeReady";
+        }
+        else if(type == "bank") {
+            // alert('준비 중입니다.');
+            // return false;
+            form.action = "/Cash/chargeReady";
+        }
+        else if(type == "culture") {
+            // alert('준비 중입니다.');
+            // return false;
+            form.action = "/Cash/chargeReady";
+        }
+        else if(type == "book") {
+            // alert('준비 중입니다.');
+            // return false;
+            form.action = "/Cash/chargeReady";
+        }
+        else if(type == "happymoney") {
+            // alert('준비 중입니다.');
+            // return false;
+            form.action = "/Cash/chargeReady";
+        }
+        else {
+            alert('준비 중입니다.');
+            return false;
+            //form.action = "/Cash/chargeReady";
+        }
+
+
+    }
+
+</script>

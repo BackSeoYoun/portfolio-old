@@ -1,0 +1,141 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}  
+.wrapper {
+    position: relative;
+    background-color: #f6f6f6;
+}
+#header {
+    width: 100%;
+    background-color: #fff;            
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+.header_inner {
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+#logo {        
+    position: absolute;    
+    width: 188px;
+    height: 63px;
+    left: 10px;
+    top: 50%;
+    margin-top: -31px;
+}
+.locate {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+.locate li {
+    display: inline-block;
+    margin-left: 27px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.locate .locate_login {
+    display: block;
+    width: 107px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 19px;
+}
+.locate li:hover .locate_login {
+    background-color: #f76b1c;
+    border: 1px solid #d04907;
+    color: #fff;
+}
+#section {
+    width: 1200px;
+    margin: 0 auto;
+}
+#footer {
+    width: 100%;
+    background-color: #292929;
+}
+.footer_inner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+#ftr1 {
+    position: relative;
+}
+#ftr1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1200px;
+    height: 1px;
+    top: 35px;
+    background-color: #c3c3c3;
+}
+#ftr1 li {
+    position: relative;
+    display: inline-block;
+    margin-left: 26px;
+}
+#ftr1 li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    top: 7px;
+    left: -12px;
+    background-color: #b4b4b4;
+}
+#ftr1 li:first-child::after {
+    display: none;
+}
+#ftr1 li a {
+    font-size: 14px;
+    font-weight: 300;
+    color: #b4b4b4;
+}
+#ftr2 {
+    display: flex;
+    padding: 30px 10px 30px 26px;
+    box-sizing: border-box;
+}
+.f_logo {
+    margin-top: 13px;
+    width: 154px;
+    height: 66px;
+}
+.info_desc {
+    margin-top: 10px;
+    margin-left: 38px;
+    font-size: 13px;
+    color: #b4b4b4;
+    line-height: 23px;
+}
+.cs_info {
+    margin-left: 204px;
+}
+.cs_info dt {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.cs_info dd {
+    font-size: 12px;
+    font-weight: 400;
+    color: #b4b4b4;
+}
+.cs_info a {
+    margin-top: 15px;
+    display: block;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #878787;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #b4b4b4;
+}

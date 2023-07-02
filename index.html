@@ -1,477 +1,848 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<title>BAEK SEO YOUN PORTFOLIO</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/portfolio/css/style.css">
-<link rel="stylesheet" href="/portfolio/assets/css/font_awesome.css">
-<link rel="stylesheet" href="/portfolio/assets/css/roboto.css">
-<link rel="stylesheet" href="/portfolio/assets/css/Noto_Sans_Kr.css">
-<script src="/portfolio/js/main.js"></script>
-<script src="/portfolio/assets/js/jquery-1.12.4.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="assets/js/code.jquery.com_jquery-3.7.0.min.js"></script>  
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script> 
+    <script src="js/main.js"></script>
 </head>
-
 <body>
-
-
-    
-    <div class="wrapper">
-        <div id=fixed_nav>
+    <div class="wrap">
+        <div class="fixed-nav">
             <ul>
-                <li><a href="#">1</a><p>MAIN</p></li>
-                <li><a href="#">2</a><p>PROFILE</p></li>
-                <li><a href="#">3</a><p>SKILL</p>  </li>
-                <li><a href="#">4</a><p>PROJECT</p></li>
-                <li><a href="#">5</a><p>CONTENT</p></li>
+                <li>
+                    <a href="#main" id="menu00">
+                        <div class="nav-btn"></div>
+                        <div class="nav-title font12">Main</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" id="menu01">
+                        <div class="nav-btn"></div>
+                        <div class="nav-title font12">About</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#sns" id="menu02">
+                        <div class="nav-btn"></div>
+                        <div class="nav-title font12">SNS Design</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#detail" id="menu03">
+                        <div class="nav-btn"></div>
+                        <div class="nav-title font12">Detail page</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#catalog" id="menu04">
+                        <div class="nav-btn"></div>
+                        <div class="nav-title font12">Digital Catalog</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#works" id="menu05">
+                        <div class="nav-btn"></div>
+                        <div class="nav-title font12">Works</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#project" id="menu06">
+                        <div class="nav-btn"></div>
+                        <div class="nav-title font12">Project</div>
+                    </a>
+                </li>
             </ul>
         </div>
-        <section id="section">
-            <div id="main">
-                <div id="h_title">
-                    <p class="p_title">PORTFOLIO</p>
-                    <p class="p_desc">WEB PUBLISHER & DESIGN</p>
-                </div>
-                <div id="color">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div id="name">BAEK SEO YOUN</div>
-            </div>  
-            <div id="sec1">
-                <div class="sec1">
-                    <div id="profile">
-                        <div class="profile_name">
-                            <p class="p_name">BAEK SEO YOUN</p>
-                            <p class="k_name">백&nbsp;서&nbsp;연</p>
+        <section>
+            <div id="main" class="main section-container bgcolor-white">
+                <div class="section-inner">
+                    <div class="main-top relative">
+                        <div class="main-title font700 italic color01">
+                            PORTFOLIO
                         </div>
-                        <div class="face">
-                            <img src="/portfolio/images/face.png" alt="face">
-                        </div>
-                        <div class="contact">
-                            <ul>
-                                <li> 1997 . 12. 01</li>
-                                <li>010 - 2105 - 8536</li>
-                                <li>sfataley@naver.com</li>
-                                <li>https://github.com/BackSeoYoun</li>
-                            </ul>
+                        <div class="main-sub-title font24 color02 font100">
+                            WEB DESIGN & PUBLISHER
                         </div>
                     </div>
-                    <div id="tools">
-                        <p class="t_title">Tools</p>
-                        <div class="tools_icon">
-                            <img src="/portfolio/images/tools_icon.png" alt="tools_icon">
+                    <div class="main-bottom">
+                        <div class="color-list flex flex-end">
+                            <div class="color-box bgcolor01"></div>
+                            <div class="color-box bgcolor02"></div>
+                            <div class="color-box bgcolor03"></div>
+                            <div class="color-box bgcolor04"></div>
                         </div>
-                        <p class="t_desc">
-                            Adobe 그래픽 툴을 사용한 다양한 디자인 제작 가능
-                        </p>
+                        <div class="main-name text-right font36 font100 color01 relative">
+                            BAEK SEO YOUN
+                        </div>
                     </div>
                 </div>                
             </div>
-            <div id="sec2">
-                <p class="skill_title">SKILL</p>
-                <div class="sec2_list">
-                    <ul>
-						<li>
-							<dl>
-								<dt>HTML</dt>
-								<dd>HTML 5 문법 준수</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>CSS</dt>
-								<dd>
-									IR 기법을 이용한 스타일 작성<br><br>
-									화려한 CSS3 Animation 구현<br><br>
-									반응형 웹페이지 스타일 작성<br><br>
-									모바일 페이지 스타일 작성
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>jQuery</dt>
-								<dd>
-									Java Script 플러그인<br>
-									활용 및 구현(jQuery)<br><br>
-									Parallex 웹페이지 구현<br><br>
-									외부 API 구현<br>
-									(Google Map, Carousel)
-								</dd>
-							</dl>
-						</li>
-						<li>
-							<dl>
-								<dt>Java Script</dt>
-								<dd>Vanilla JS 스크립팅</dd>
-							</dl>
-						</li>
-					</ul>
-                    
+            <div id="about" class="sec01 section-container bgcolor-sky">
+                <div class="section-inner">
+                    <div class="sec01-title-container relative">
+                        <div class="sec01-title font36 color01 font600">
+                            BAEK SEO YOUN
+                        </div>
+                        <div class="sec01-sub-title font24 color01">
+                            백&nbsp;&nbsp;서&nbsp;&nbsp;연
+                        </div>
+                    </div>                   
+                    <div class="profile flex align-end relative">
+                        <div class="portrait">
+
+                        </div>
+                        <div class="profile-info">
+                            <ul>
+                                <li class="font16 font200 color-darkgray">
+                                    <span class="inline-block color02 font600">생년월일</span>
+                                    1997. 12. 01
+                                </li>
+                                <li class="font16 font300 color-darkgray">
+                                    <span class="inline-block color02 font600">연락처</span>
+                                    010 - 2105 - 8536 / sfataley@naver.com
+                                </li>
+                                <li class="font16 font300 color-darkgray">
+                                    <span class="inline-block color02 font600">Github</span>
+                                    <a href="https://github.com/BackSeoYoun" target="_blank">https://github.com/BackSeoYoun</a> 
+                                </li>
+                                <li class="font16 font300 color-darkgray">
+                                    <span class="inline-block color02 font600">학력</span>
+                                    한성대학교 디자인 평생교육원 디지털아트학과 졸업 
+                                </li>
+                                <li class="font16 font300 color-darkgray">
+                                    <span class="inline-block color02 font600">경력</span>
+                                    2020.11 ~ 2021.12 올스타 컴퍼니 웹디자이너
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-container flex align-start">
+                        <div class="tools">
+                            <div class="skill-title font30 font600 color01">
+                                Tools
+                            </div>
+                            <div class="tool-container flex flex-column align-center flex-center">
+                                <div class="tool-list flex align-center flex-center">
+                                    <div class="tool-icon">
+                                        <img src="images/adobe_01.png" alt="어도비 일러스트레이터">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="images/adobe_02.png" alt="어도비 포토샵">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="images/adobe_03.png" alt="어도비 XD">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="images/adobe_04.png" alt="어도비 프리미어">
+                                    </div>
+                                    <div class="tool-icon">
+                                        <img src="images/adobe_05.png" alt="어도비 애프터 이펙트">
+                                    </div>   
+                                </div>                                              
+                                <div class="tool-desc font18 color02 font300">
+                                    Adobe 그래픽 툴을 사용한 다양한 디자인 제작 가능
+                                </div>                     
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-title font30 font600 color01">
+                                Skill
+                            </div>
+                            <div class="tool-container">
+                                <div class="skill-list-container">
+                                    <div class="skill-list-title color01 font18 font700">
+                                        HTML
+                                    </div>
+                                    <div class="skill-desc font14 color02 flex align-center">
+                                        <ul>
+                                            <li>
+                                                HTML 5 문법 준수
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="skill-list-container">
+                                    <div class="skill-list-title color01 font18 font700">
+                                        CSS
+                                    </div>
+                                    <div class="skill-desc font14 color02 flex align-center">
+                                        <ul>
+                                            <li>
+                                                IR 기법을 이용한 스타일 작성 / CSS3 Animation 구현
+                                            </li>
+                                            <li>
+                                                반응형 웹페이지 스타일 작성 / 모바일 페이지 스타일 작성
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="skill-list-container">
+                                    <div class="skill-list-title color01 font18 font700">
+                                        jQuery                               
+                                    </div>
+                                    <div class="skill-desc font14 color02 flex align-center">
+                                        <ul>
+                                            <li>
+                                                javascript 플러그인 활용 및 구현(jQuery) / Parallex 웹페이지 구현
+                                            </li>
+                                            <li>
+                                                외부 API 구현(Google Map, Carousel)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="skill-list-container">
+                                    <div class="skill-list-title color01 font18 font700">
+                                        JavaScript                              
+                                    </div>
+                                    <div class="skill-desc font14 color02 flex align-center">
+                                        <ul>
+                                            <li>
+                                                Vanilla JS 스크립팅
+                                            </li>
+                                        </ul>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="sec3">
-                <div class="sec3_inner">
-                    <div id="sec3_index">
-                        <div class="sec3_title">PROJECT</div>
-                        <div class="sec3_desc">Renewal Project Web Site</div>
+            <div id="sns" class="sec02 section-container bgcolor-white flex align-center">
+                <div class="section-inner flex space-between align-center flex-wrap align-content-center">
+                    <div class="sns-container relative sns-title font72 color-white font700 bgcolor01 lh1 none-animation">
+                        SNS <br> DESIGN
                     </div>
-                    <div id="sec3_list">
-                        <ul class="icon_list">
-                            <li>VANTERIOR</li>
-                            <li>MINI GARDEN</li>
-                            <li>WYLIE</li>
-                            <li>VANTERIOR<br>mobile</li>
+                    <div class="sns-container relative sns-content01">
+                        <a href="images/sns/sns01.png" data-lightbox="sns_images" data-title="오설록 말차 샷 비엔나">
+                            <img src="images/sns/sns01.png" alt="오설록 말차 샷 비엔나">
+                        </a>                        
+                    </div>
+                    <div class="sns-container relative sns-content02">
+                        <a href="images/sns/sns02.png" data-lightbox="sns_images" data-title="무인양품">
+                            <img src="images/sns/sns02.png" alt="무인양품">
+                        </a>                         
+                    </div>
+                    <div class="sns-container relative sns-content03">
+                        <a href="images/sns/sns03.png" data-lightbox="sns_images" data-title="삼첩떡볶이">
+                            <img src="images/sns/sns03.png" alt="삼첩떡볶이">
+                        </a>  
+                    </div>
+                    <div class="sns-container relative sns-content04">
+                        <a href="images/sns/sns04.png" data-lightbox="sns_images" data-title="입생로랑">
+                            <img src="images/sns/sns04.png" alt="입생로랑">
+                        </a>                         
+                    </div>
+                    <div class="sns-container relative sns-content05">
+                        <a href="images/sns/sns05.png" data-lightbox="sns_images" data-title="코카콜라 잭다니엘">
+                            <img src="images/sns/sns05.png" alt="코카콜라 잭다니엘">
+                        </a>                        
+                    </div>
+                    <div class="sns-container relative sns-content06">
+                        <a href="images/sns/sns06.png" data-lightbox="sns_images" data-title="페스룸">
+                            <img src="images/sns/sns06.png" alt="페스룸">
+                        </a>                            
+                    </div>
+                    <div class="sns-container relative sns-content07">
+                        <a href="images/sns/sns07.png" data-lightbox="sns_images" data-title="소니 헤드셋">
+                            <img src="images/sns/sns07.png" alt="소니 헤드셋">
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div id="detail" class="sec03 section-container bgcolor-sky">
+                <div class="section-inner">
+                    <div class="detail-title font72 font100 color01 text-right relative">
+                        DETAIL PAGE
+                    </div>
+                    <div class="detail-list flex align-start flex-end relative">
+                        <div class="detail-img relative">
+                            <a href="images/detail/detail_01.png" data-lightbox="detail_images" data-title="다다일상">
+                                <img src="images/detail/detail_01.png" alt="다다일상">
+                                <div class="detail-overlay flex align-center flex-center color-white font100 font18 italic text-center lh14">
+                                    차 구독 서비스
+                                    <br>
+                                    다다일상 상세페이지
+                                </div>
+                            </a>         
+                        </div>
+                        <div class="detail-img relative">
+                            <a href="images/detail/detail_02.png" data-lightbox="detail_images" data-title="도시어부">
+                                <img src="images/detail/detail_02.png" alt="도시어부">
+                                <div class="detail-overlay flex align-center flex-center color-white font100 font18 italic text-center lh14">
+                                    모바일 게임 도시어부
+                                    <br>
+                                    커밍순 상세페이지
+                                </div>
+                            </a>        
+                        </div>
+                        <div class="detail-img relative">
+                            <a href="images/detail/detail_03.png" data-lightbox="detail_images" data-title="피치앤피치">
+                                <img src="images/detail/detail_03.png" alt="피치앤피치">
+                                <div class="detail-overlay flex align-center flex-center color-white font100 font18 italic text-center lh14">
+                                    타로 상담 피치앤피치
+                                    <br>
+                                    상세페이지
+                                </div>
+                            </a> 
+                        </div>
+                        <div class="detail-img relative">
+                            <a href="images/detail/detail_04.jpg" data-lightbox="detail_images" data-title="스톤헨지">
+                                <img src="images/detail/detail_04.jpg" alt="스톤헨지">
+                                <div class="detail-overlay flex align-center flex-center color-white font100 font18 italic text-center lh14">
+                                    스톤헨지
+                                    <br>
+                                    메인 페이지 디자인
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="catalog" class="sec04 section-container bgcolor-white">
+                <div class="section-inner">
+                    <div class="catalog-title font60 color01 font200 text-center">
+                        DIGITAL CATALOG
+                    </div>
+                    <div class="catalog-list flex flex-center">
+                        <div class="catalog-thumbnail catalog-thumbnail-left relative">
+                            <a href="catalog/catalog01/index.html" target="_blank">
+                                <div class="catalog-overlay font18 color-white flex flex-center align-center text-center lh14">
+                                    반려동물 의류 브랜드 / 강아지옷 쇼핑몰
+                                    <br>
+                                    꼬까독 (ccoccadog)
+                                </div>
+                                <img src="images/catalog/catalog_thumbnail_01.png" alt="꼬까독">
+                            </a>
+                        </div>
+                        <div class="catalog-thumbnail-right">
+                            <div class="catalog-thumbnail relative">
+                                <a href="catalog/catalog02/index.html" target="_blank">
+                                    <div class="catalog-overlay font18 color-white flex flex-center align-center text-center lh14">
+                                        감환경디자인주식회사
+                                        <br>
+                                        회사 소개 페이지
+                                    </div>
+                                    <img src="images/catalog/catalog_thumbnail_02.png" alt="감환경 회사">
+                                </a>
+                            </div>
+                            <div class="catalog-thumbnail relative">
+                                <a href="catalog/catalog03/index.html" target="_blank">
+                                    <div class="catalog-overlay font18 color-white flex flex-center align-center text-center lh14">
+                                        감환경디자인주식회사
+                                        <br>
+                                        제품 소개 페이지
+                                    </div>
+                                    <img src="images/catalog/catalog_thumbnail_03.png" alt="감환경 제품">
+                                </a>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+            </div>
+            <div id="works" class="sec05 section-container bgcolor-sky flex align-center">
+                <div class="section-inner">
+                    <div class="works-title color01">
+                        <div class="works-sub-title font30 font100 lh18">
+                            WORKS
+                        </div>
+                        <div class="works-main-title font48">
+                            올스타컴퍼니
+                        </div>
+                    </div>
+                    <div class="works-list-container flex align-start space-between">
+                        <div class="works-view">                            
+                            <div id="tab-1" class="works-content show">
+                                <div class="works-content-web-img">
+                                    <a href="images/allstar/web/allstargames.png" data-lightbox="allstargames-web" data-title="올스타게임즈 메인웹">
+                                        <img src="images/allstar/web/allstargames.png" alt="올스타게임즈 웹">
+                                    </a>                                    
+                                </div>
+                                <div class="web-link">
+                                    <a class="font18 color01 italic" href="allstar/allstargames/index.html" target="_blank">
+                                        GO TO SITE >
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="works-content">
+                                <div class="works-content-web-img flex align-center">
+                                    <a href="images/allstar/web/allstar9.png" data-lightbox="allstar9" data-title="올스타9 웹">
+                                        <img src="images/allstar/web/allstar9.png" alt="올스타9 웹">
+                                    </a>  
+                                </div>
+                                <div class="web-link">
+                                    <a class="font18 color01 italic" href="allstar/allstar9/index.html" target="_blank">
+                                        GO TO SITE >
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="works-content">
+                                <div class="works-content-web-img">
+                                    <a href="images/allstar/web/nexnet.png" data-lightbox="nexnet" data-title="넥스넷 웹">
+                                        <img src="images/allstar/web/nexnet.png" alt="넥스넷 웹">
+                                    </a>  
+                                </div>
+                                <div class="web-link">
+                                    <a class="font18 color01 italic" href="allstar/nexnet/index.html" target="_blank">
+                                        GO TO SITE >
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="tab-4" class="works-content">
+                                <div class="swiper eventpage">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_01_m.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_01_m.png" alt="이벤트 페이지01 모바일">
+                                                </a>  
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                새해 맞이 이벤트 모바일 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_01_pc.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_01_pc.png" alt="이벤트 페이지01 PC">
+                                                </a>                                                
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                새해 맞이 이벤트 PC 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_02_m.jpg" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_02_m.jpg" alt="이벤트 페이지02 모바일">
+                                                </a>                                                
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                               데일리 이벤트 모바일 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_02_pc.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_02_pc.png" alt="이벤트 페이지02 PC">
+                                                </a>                                                 
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                데일리 이벤트 PC 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_03_pc.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_03_pc.png" alt="이벤트 페이지03 PC">
+                                                </a>                                                  
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                발렌타인 추천 이벤트 PC 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_04_pc.jpg" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_04_pc.jpg" alt="이벤트 페이지04 PC">
+                                                </a> 
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                봄맞이 추천 이벤트 PC 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_05_m.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_05_m.png" alt="이벤트 페이지04 모바일">
+                                                </a> 
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                할로윈 추천 이벤트 모바일 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_05_pc.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_05_pc.png" alt="이벤트 페이지05 PC">
+                                                </a>
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                할로윈 추천 이벤트 PC 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_06_pc.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_06_pc.png" alt="이벤트 페이지06 PC">
+                                                </a>
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                신규가입 이벤트 PC 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_07_pc.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_07_pc.png" alt="이벤트 페이지07 PC">
+                                                </a>
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                유튜브 이벤트 PC 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_08_pc.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_08_pc.png" alt="이벤트 페이지08 PC">
+                                                </a>
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                카카오톡 이벤트 PC 페이지
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="works-event-page-img">
+                                                <a href="images/allstar/event/event_09_pc.png" data-lightbox="allstar-event-web">
+                                                    <img src="images/allstar/event/event_09_pc.png" alt="이벤트 페이지09 PC">
+                                                </a>
+                                            </div>
+                                            <div class="works-event-tile font16 color02">
+                                                포춘쿠키 이벤트 PC 페이지
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-5" class="works-content">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_01.png" alt="이벤트 배너 01">
+                                            </div>
+                                            <div class="banner-bottom">
+                                                <img src="images/allstar/banner/eventbanner_01.png" alt="이벤트 띠배너 01">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_02.png" alt="이벤트 배너 02">
+                                            </div>
+                                            <div class="banner-bottom">
+                                                <img src="images/allstar/banner/eventbanner_02.png" alt="이벤트 띠배너 02">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_03.png" alt="이벤트 배너 03">
+                                            </div>
+                                            <div class="banner-bottom">
+                                                <img src="images/allstar/banner/eventbanner_03.png" alt="이벤트 띠배너 03">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_04.png" alt="이벤트 배너 04">
+                                            </div>
+                                            <div class="banner-bottom">
+                                                <img src="images/allstar/banner/eventbanner_04.png" alt="이벤트 띠배너 04">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_05.png" alt="이벤트 배너 05">
+                                            </div>
+                                            <div class="banner-bottom">
+                                                <img src="images/allstar/banner/eventbanner_05.png" alt="이벤트 띠배너 05">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_06.jpg" alt="이벤트 배너 06">
+                                            </div>                                            
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_07.jpg" alt="이벤트 배너 07">
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_08.jpg" alt="이벤트 배너 08">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_09.jpg" alt="이벤트 배너 09">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-top">
+                                                <img src="images/allstar/banner/eventpage_10.png" alt="이벤트 배너 10">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="banner-bottom">
+                                                <img src="images/allstar/banner/eventbanner_06.png" alt="이벤트 띠배너 06">
+                                            </div>
+                                            <div class="banner-bottom">
+                                                <img src="images/allstar/banner/eventbanner_07.png" alt="이벤트 띠배너 07">
+                                            </div>
+                                            <div class="banner-bottom">
+                                                <img src="images/allstar/banner/eventbanner_08.jpg" alt="이벤트 띠배너 08">
+                                            </div>
+                                            <div class="banner-bottom">
+                                                <img src="images/allstar/banner/eventbanner_09.jpg" alt="이벤트 띠배너 09">
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="works-menu-container">
+                            <div class="works-menu flex align-center show" data-tab="tab-1">
+                                <span class="works-menu-btn"></span>
+                                <div class="works-menu-title">
+                                    올스타게임즈 메인
+                                </div>
+                            </div>
+                            <div class="works-menu flex align-center" data-tab="tab-2">
+                                <span class="works-menu-btn"></span>
+                                <div class="works-menu-title">
+                                    올스타 9 웹
+                                </div>
+                            </div>
+                            <div class="works-menu flex align-center" data-tab="tab-3">
+                                <span class="works-menu-btn"></span>
+                                <div class="works-menu-title">
+                                    넥스넷 웹
+                                </div>
+                            </div>
+                            <div class="works-menu flex align-center" data-tab="tab-4">
+                                <span class="works-menu-btn"></span>
+                                <div class="works-menu-title">
+                                    이벤트 페이지
+                                </div>
+                            </div>
+                            <div class="works-menu flex align-center" data-tab="tab-5">
+                                <span class="works-menu-btn"></span>
+                                <div class="works-menu-title">
+                                    이벤트 배너
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="project" class="sec06 section-container bgcolor-white">
+                <div class="section-inner">
+                    <div class="project-title font60 color01 font100 relative text-center">
+                        PROJECT
+                    </div>
+                    <div class="project-nav">
+                        <ul class="project-nav-title-container flex align-center flex-center">
+                            <li class="project-nav-title project-1 font18 color-darkgray font300 text-center show">
+                                VANTERIOR 
+                            </li>
+                            <li class="project-nav-title font18 project-2 color-darkgray font300 text-center">
+                                MINI GARDEN
+                            </li>
+                            <li class="project-nav-title project-3 font18 color-darkgray font300 text-center">
+                                WYLIE
+                            </li>
+                            <li class="project-nav-title project-4 font18 color-darkgray font300 text-center">
+                                VANTERIOR<br>mobile
+                            </li>
+                            <li class="project-nav-title project-5 font18 color-darkgray font300 text-center">
+                                NEX CASINO
+                            </li>
                         </ul>
-                        <ul class="controller">
-                            <li><a href="">1</a></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">3</a></li>
-                            <li><a href="">4</a></li>
-                        </ul>
-                        <ul class="desc_list">
-                            <li>
-                                <span class="project_title">VANTERIOR</span><br><br>
-                                <span class="project_desc">
-                                    반셀프인테리어 전문 '반테리어'<br>
-                                    웹사이트 리뉴얼 프로젝트
-                                </span><br>
-                                <a href="" class="project1" target="_black">Go to VANTERIOR ></a>
+                        <ul class="project-nav-controller-container flex align-center flex-center relative">
+                            <li class="project-nav-controller bgcolor-white relative show" data-tab="project-1">
+                                VANTERIOR 
                             </li>
-                            <li>
-                                <span class="project_title">MINI GARDEN</span><br><br>
-                                <span class="project_desc">
-                                    마리모 전문 인터넷 샵 '미니가든'<br>
-                                    웹사이트 리뉴얼 프로젝트
-                                </span><br>
-                                <a href="/portfolio/project2/index.html" id="project2" target="_black">Go to MINI GARDEN ></a>
+                            <li class="project-nav-controller bgcolor-white relative" data-tab="project-2">
+                                MINI GARDEN
                             </li>
-                            <li>
-                                <span class="project_title">WYLIE</span><br><br>
-                                <span class="project_desc">
-                                    디지털 통합 마케팅 서비스 'Wylie'<br>
-                                    웹사이트 리뉴얼 프로젝트
-                                </span><br>
-                                <a href="/portfolio/project3/index.html" id="project3" target="_black">Go to WYLIE ></a>
+                            <li class="project-nav-controller bgcolor-white relative" data-tab="project-3">
+                                WYLIE
                             </li>
-                            <li>
-                                <span class="project_title">VANTERIOR : mobile</span><br><br>
-                                <span class="project_desc">
-                                    반셀프인테리어 전문 '반테리어'<br>
-                                    웹사이트 모바일 프로젝트
-                                </span><br>
-                                <a href="" class="project1" target="_black">Go to VANTERIOR : mobile ></a>
-                            </li>                      
+                            <li class="project-nav-controller bgcolor-white relative" data-tab="project-4">
+                                VANTERIOR mobile
+                            </li>
+                            <li class="project-nav-controller bgcolor-white relative" data-tab="project-5">
+                                NEX CASINO
+                            </li>
                         </ul>
                     </div>
-                    <div class="under_btn">
-                        <a href="">under</a>
-                    </div> 
-                </div>       
-            </div>   
-                <div id="sec4">
-                   <div class="sec4_container">
-                       <ul>
-                           <li class="project1">
-                                <div id="sec4_index">
-                                    <div class="sec4_title">Project</div>
-                                    <div class="sec4_project">VANTERIOR</div>
+                    <div class="project-view-container">
+                        <div class="project-view show project-1">
+                            <div class="project-img">
+                                <a href="images/project/project01.png" data-lightbox="vanterior-web" data-title="반테리어 웹">
+                                    <img src="images/project/project01.png" alt="반테리어">
+                                </a>
+                            </div>
+                            <div class="project-desc-container text-center">
+                                <div class="project-desc-title font30 font900 italic color01 relative">
+                                    VANTERIOR
                                 </div>
-                                <div id="p_header">
-                                    <div class="img_header">
-                                        <img src="/portfolio/images/project1_header.png" alt="project2_header">
-                                    </div>
-                                    <div class="desc_header">
-                                        마리모 전문 인터넷 쇼핑몰 ‘미니가든’의 리뉴얼 프로젝트 구현 산출물입니다.
-                                        <br>
-                                        반복되는 레이아웃의 단조로운 구조와 BLACK & WHITH의 모노톤의 컬러가 딱딱한 느낌을 주며 마리모 판매샵과는 어울리지 않는 느낌을 줍니다. 
-                                        <br>
-                                        이런 부분을 변경해 마리모의 컬러를 대입하고 레이아웃의 구조를 바꿔 산뜻하고 가볍게 리뉴얼 했습니다.
-                                    </div>
-                                </div>       
-                                <div id="preview">                                    
-                                    <div class="pre_index">
-                                        <div class="header">
-                                            <dl>
-                                                <dt>
-                                                    HEADER
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">GNB, MAIN SLIDER</span><br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                        <div class="section">
-                                            <dl>
-                                                <dt>
-                                                    SECTION
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">NEW ITEM, BANNER, BEST ITME,<br> MORE ITEM, ETC</span>
-                                                    <br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                        <div class="footer">
-                                            <dl>
-                                                <dt>
-                                                    FOOTER
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">QUICK LOCATE, COMPANY INFO, SNS</span>
-                                                    <br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                    </div>
-                                    <div class="img_preview">
-                                        <img src="/portfolio/images/project1_pre.png" alt="project2_pre">
-                                    </div>
-                                </div>   
-                                <div class="more_btn">
-                                    <a href="" class="project1" target="_black"> go to VANTERIOR > </a>
-                                </div>                      
-                           </li>
-                           <li class="project2">
-                                <div id="sec4_index">
-                                    <div class="sec4_title">Project</div>
-                                    <div class="sec4_project">MINI GARDEN</div>
+                                <div class="project-desc font18 font300 color02">
+                                    반셀프인테리어 전문 '반테리어' 메인 웹사이트 리뉴얼 프로젝트
                                 </div>
-                                <div id="p_header">
-                                    <div class="img_header">
-                                        <img src="/portfolio/images/project2_header.png" alt="project2_header">
-                                    </div>
-                                    <div class="desc_header">
-                                        마리모 전문 인터넷 쇼핑몰 ‘미니가든’의 리뉴얼 프로젝트 구현 산출물입니다.
-                                        <br>
-                                        반복되는 레이아웃의 단조로운 구조와 BLACK & WHITH의 모노톤의 컬러가 딱딱한 느낌을 주며 마리모 판매샵과는 어울리지 않는 느낌을 줍니다. 
-                                        <br>
-                                        이런 부분을 변경해 마리모의 컬러를 대입하고 레이아웃의 구조를 바꿔 산뜻하고 가볍게 리뉴얼 했습니다.
-                                    </div>
-                                </div>       
-                                <div id="preview">                                    
-                                    <div class="pre_index">
-                                        <div class="header">
-                                            <dl>
-                                                <dt>
-                                                    HEADER
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">GNB, MAIN SLIDER</span><br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                        <div class="section">
-                                            <dl>
-                                                <dt>
-                                                    SECTION
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">NEW ITEM, BANNER, BEST ITME,<br> MORE ITEM, ETC</span>
-                                                    <br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                        <div class="footer">
-                                            <dl>
-                                                <dt>
-                                                    FOOTER
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">QUICK LOCATE, COMPANY INFO, SNS</span>
-                                                    <br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                    </div>
-                                    <div class="img_preview">
-                                        <img src="/portfolio/images/project2_pre.png" alt="project2_pre">
-                                    </div>
-                                </div>   
-                                <div class="more_btn">
-                                    <a href="/portfolio/project2/index.html" target="_black"> go to MINIGARDEN > </a>
-                                </div>                      
-                           </li>
-                           <li class="project3">
-                                <div id="sec4_index">
-                                    <div class="sec4_title">Project</div>
-                                    <div class="sec4_project">WYLIE</div>
+                                <div class="project-link">
+                                    <a href="vanterior/index.html" target="_blank" class="font16 color01 font300 italic">
+                                        Go to VANTERIOR >
+                                    </a>                           
                                 </div>
-                                <div id="p_header">
-                                    <div class="img_header">
-                                        <img src="/portfolio/images/project3_header.png" alt="project2_header">
-                                    </div>
-                                    <div class="desc_header">
-                                        마리모 전문 인터넷 쇼핑몰 ‘미니가든’의 리뉴얼 프로젝트 구현 산출물입니다.
-                                        <br>
-                                        반복되는 레이아웃의 단조로운 구조와 BLACK & WHITH의 모노톤의 컬러가 딱딱한 느낌을 주며 마리모 판매샵과는 어울리지 않는 느낌을 줍니다. 
-                                        <br>
-                                        이런 부분을 변경해 마리모의 컬러를 대입하고 레이아웃의 구조를 바꿔 산뜻하고 가볍게 리뉴얼 했습니다.
-                                    </div>
-                                </div>       
-                                <div id="preview">                                    
-                                    <div class="pre_index">
-                                        <div class="header">
-                                            <dl>
-                                                <dt>
-                                                    HEADER
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">GNB, MAIN SLIDER</span><br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                        <div class="section">
-                                            <dl>
-                                                <dt>
-                                                    SECTION
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">NEW ITEM, BANNER, BEST ITME,<br> MORE ITEM, ETC</span>
-                                                    <br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                        <div class="footer">
-                                            <dl>
-                                                <dt>
-                                                    FOOTER
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">QUICK LOCATE, COMPANY INFO, SNS</span>
-                                                    <br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                    </div>
-                                    <div class="img_preview">
-                                        <img src="/portfolio/images/project3_pre.png" alt="project3_pre">
-                                    </div>
-                                </div>   
-                                <div class="more_btn">
-                                    <a href="/portfolio/project3/index.html" id="project3" target="_black"> go to WYLIE > </a>
-                                </div>                      
-                           </li>
-                           <li class="project4">
-                                <div id="sec4_index">
-                                    <div class="sec4_title">Project</div>
-                                    <div class="sec4_project">VANTERIOR:mobile</div>
+                            </div>
+                        </div>   
+                        <div class="project-view project-2">
+                            <div class="project-img">
+                                <a href="images/project/project02.png" data-lightbox="minigarden" data-title="미니가든 웹">
+                                    <img src="images/project/project02.png" alt="미니가든">
+                                </a>
+                            </div>
+                            <div class="project-desc-container text-center">
+                                <div class="project-desc-title font30 font900 italic color01 relative">
+                                    MINI GARDEN
                                 </div>
-                                <div id="p_header">
-                                    <div class="img_header">
-                                        <img src="/portfolio/images/project4_header.png" alt="project4_header">
-                                    </div>
-                                    <div class="desc_header">
-                                        마리모 전문 인터넷 쇼핑몰 ‘미니가든’의 리뉴얼 프로젝트 구현 산출물입니다.
-                                        <br>
-                                        반복되는 레이아웃의 단조로운 구조와 BLACK & WHITH의 모노톤의 컬러가 딱딱한 느낌을 주며 마리모 판매샵과는 어울리지 않는 느낌을 줍니다. 
-                                        <br>
-                                        이런 부분을 변경해 마리모의 컬러를 대입하고 레이아웃의 구조를 바꿔 산뜻하고 가볍게 리뉴얼 했습니다.
-                                    </div>
-                                </div>       
-                                <div id="preview">                                    
-                                    <div class="pre_index">
-                                        <div class="header">
-                                            <dl>
-                                                <dt>
-                                                    HEADER
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">GNB, MAIN SLIDER</span><br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                        <div class="section">
-                                            <dl>
-                                                <dt>
-                                                    SECTION
-                                                </dt>
-                                                <dd>
-                                                    <span class="content">NEW ITEM, BANNER, BEST ITME,<br> MORE ITEM, ETC</span>
-                                                    <br>
-                                                    <span class="content_desc">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. maecenas accumsan lacus vel facilisis. 
-                                                    </span>
-                                                </dd>
-                                            </dl>
-                                        </div>
-                                    </div>
-                                    <div class="img_preview">
-                                        <img src="/portfolio/images/project4_pre.png" alt="project4_pre">
-                                    </div>
-                                </div>   
-                                <div class="more_btn">
-                                    <a href="" class="project1" target="_black"> go to VANTERIOR:mobile > </a>
-                                </div>                      
-                           </li>
-                       </ul>
-                   </div>
-                </div>      
+                                <div class="project-desc font18 font300 color02">
+                                    마리모 전문 인터넷 샵 '미니가든' 메인 웹사이트 리뉴얼 프로젝트
+                                </div>
+                                <div class="project-link">
+                                     <a href="minigarden/index.html" target="_blank" class="font16 color01 font300 italic">
+                                        Go to MINI GARDEN >
+                                    </a>                          
+                                </div>
+                            </div>
+                        </div>      
+                        <div class="project-view project-3">
+                            <div class="project-img">
+                                <a href="images/project/project03.png" data-lightbox="wylie" data-title="와일리 웹">
+                                    <img src="images/project/project03.png" alt="와일리">
+                                </a>
+                            </div>
+                            <div class="project-desc-container text-center">
+                                <div class="project-desc-title font30 font900 italic color01 relative">
+                                     WYLIE
+                                </div>
+                                <div class="project-desc font18 font300 color02">
+                                    디지털 통합 마케팅 서비스 'Wylie' 반응형 웹사이트 리뉴얼 프로젝트
+                                </div>
+                                <div class="project-link">
+                                    <a href="wylie/index.html" target="_blank" class="font16 color01 font300 italic">
+                                        Go to WYLIE >
+                                    </a>                          
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="project-view project-4">
+                            <div class="project-img">
+                                <a href="images/project/project04.png" data-lightbox="vanterior-mo" data-title="반테리어 모바일 웹">
+                                    <img src="images/project/project04.png" alt="반테리어 모바일">
+                                </a>
+                            </div>
+                            <div class="project-desc-container text-center">
+                                <div class="project-desc-title font30 font900 italic color01 relative">
+                                    VANTERIOR mobile
+                                </div>
+                                <div class="project-desc font18 font300 color02">
+                                    반셀프인테리어 전문 '반테리어' 메인 웹사이트 리뉴얼 프로젝트 :: 모바일
+                                </div>
+                                <div class="project-link">
+                                    <button class="font16 color01 font300 italic" target="_blank" onclick="window.open('vanteriormo/index.html','_blank','width=430,height=700,location=no,status=no,scrollbars=yes')">
+                                        Go to VANTERIOR : mobile >
+                                    </button>                           
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="project-view project-5">
+                            <div class="project-img">
+                                <a href="images/project/project05.png" data-lightbox="nexcasino" data-title="넥스카지노 웹">
+                                    <img src="images/project/project05.png" alt="넥스 카지노">
+                                </a>
+                            </div>
+                            <div class="project-desc-container text-center">
+                                <div class="project-desc-title font30 font900 italic color01 relative">
+                                    NEX CASINO
+                                </div>
+                                <div class="project-desc font18 font300 color02">
+                                    온라인 카지노 넥스 카지노 반응형 웹사이트 디자인
+                                </div>
+                                <div class="project-link">
+                                    <a href="nexcasino/main.html" target="_blank" class="font16 color01 font300 italic">
+                                        Go to NEX CASINO >
+                                    </a>                           
+                                </div>
+                            </div>
+                        </div>   
+                    </div>             
+                </div>
             </div>
         </section>
-        <footer id="footer">
-            <div class="footer_inner">
-                <div class="footer_info">
-                    <div class="my_info">
-                        <span class="footer_name">
-                            BAEK SEO YOUN
-                        </span>
-                        <br>
-                        <span class="contact_info">
-                            E-mail : sfataley@naver.com<br>
-                            +82 10-010-2105-8536<br>
-                            INSTARGRAM : popos1201<br>
-                            KAKAOTALK : seoyoun1201<br>
-                            https://github.com/BackSeoYoun
-                        </span>                       
-                    </div>
-                    <div class="copy_right">Copyright 2020. BAEK SEOYOUN. all rights reserved.</div>
+        <footer class="bgcolor-beige">
+            <div class="footer-inner">
+                <div class="footer-name font24 color01 font400 relative">
+                    BAEK SEO YOUN
                 </div>
-                <div class="sns">
+                <div class="footer-desc lh12">
                     <ul>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="far fa-envelope"></i></a></li>
-                        <li><a href=""><i class="far fa-comment-dots"></i></a></li>
-                        <li><a href=""><i class="fab fa-github"></i></a></li>
+                        <li class="font16 color01 font100 inline-block relative">
+                            E-mail : sfataley@naver.com 
+                        </li>
+                        <li class="font16 color01 font100 inline-block relative">
+                            010-010-2105-8536
+                        </li>
+                        <li class="font16 color01 font100 inline-block relative">
+                            KAKAOTALK : seoyoun1201
+                        </li>
+                        <li class="font16 color01 font100 inline-block relative">
+                            https://github.com/BackSeoYoun
+                        </li>
                     </ul>
+                </div>
+                <div class="footer-copyright font12 color01 font300 italic">
+                    Copyright 2020. BAEK SEOYOUN. all rights reserved.
                 </div>
             </div>
         </footer>
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+    var swiper = new Swiper(".eventpage", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+    });
+    </script>
 </body>
+</script>
 </html>

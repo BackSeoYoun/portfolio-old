@@ -1,0 +1,27 @@
+$(function(){
+    $(".sub-container").hide();
+    $(".main02").mouseover(function(){
+        $(".sub02").show();
+        $(".sub03").hide();
+        $(".sub04").hide();
+    });
+    $(".main03").mouseover(function(){
+        $(".sub03").show();
+        $(".sub02").hide();
+        $(".sub04").hide();
+    });
+    $(".main04").mouseover(function(){
+        $(".sub04").show();
+        $(".sub02").hide();
+        $(".sub03").hide();
+    });
+    $(".sub_menu").mouseleave(function(){
+        $(".sub_menu").hide();
+    });
+    $(".logo").mouseover(function(){
+        $(".sub_menu").hide();
+    });
+    $(".main01").mouseover(function(){
+        $(".sub_menu").hide();
+    });
+});

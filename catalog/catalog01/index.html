@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCOCCADOG</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/tab.js"></script>
+    <style>
+        .wrap {
+            text-align: center;
+        }
+        .main_visual {
+            animation-name: main;
+            animation-duration:2s;
+            animation-delay:now;
+            animation-direction:alternate;
+            animation-fill-mode: forwards;
+        }
+        @keyframes main {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }           
+        .index_logo {
+            margin-top: -40px;
+            animation-name: logo;
+            animation-duration:1s;
+            animation-delay:now;
+            animation-timing-function: ease-in-out;
+            animation-direction:alternate;
+            animation-fill-mode: forwards;
+        }
+        .index_logo img {
+            transform: scale(0.9);
+            transition: all 0.5s;
+        }
+        .index_logo:hover img {
+            transform: scale(1);
+        }
+        @keyframes logo {
+            0% {
+                margin-top: -20px;
+                opacity: 0;
+            }
+            100% {
+                margin-top: -40px;
+                opacity: 1;
+            }
+        }           
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main_visual">
+            <img src="img/index.png" alt="main visual image">
+        </div>
+        <div class="index_logo">
+            <a href="html/sub01.html">
+                <img src="img/index_logo.png" alt="ccoccadog logo">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
